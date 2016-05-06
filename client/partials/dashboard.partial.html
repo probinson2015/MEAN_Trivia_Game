@@ -1,0 +1,22 @@
+<h3> Dashboard partial </h3>
+
+<table>
+	<thead>
+		<th>Name</th>
+		<th>Score</th>
+		<th>Percent</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="test in dashboardsCtrl.tests | orderBy: 'percentage'">
+			<td ng-bind="test.name"></td>
+			<td> 
+				<span ng-bind="test.correct_no"></span>/3
+			</td>
+			<td>
+				<span ng-bind="test.percent | percentage: 2"></span>
+			</td>
+			
+		</tr>
+	</tbody>
+	</table>
+	<!-- {{dashboardsCtrl.tests}} -->

@@ -1,0 +1,49 @@
+<h1>Take the quiz</h1>
+
+
+
+<!-- {{playsCtrl.questions}} -->
+
+
+<div>
+	<h4 ng-bind="playsCtrl.questions[0].question"></h4>
+	<p>
+		<input type="radio" name="question0" ng-model="playsCtrl.question0" ng-value="playsCtrl.questions[0].answers[0]">
+		<span ng-bind="playsCtrl.questions[0].answers[0].answer"></span>
+		<input type="radio" name="question0" ng-model="playsCtrl.question0"  ng-value="playsCtrl.questions[0].answers[1]">
+		<span ng-bind="playsCtrl.questions[0].answers[1].answer"></span>
+		<input type="radio" name="question0" ng-model="playsCtrl.question0"  ng-value="playsCtrl.questions[0].answers[2]">
+		<span ng-bind="playsCtrl.questions[0].answers[2].answer"></span>
+	</p>
+	<hr>	
+</div>
+<div>
+	<h4 ng-bind="playsCtrl.questions[1].question"></h4>
+	<p>
+		<input type="radio" name="question1" ng-model="playsCtrl.question1" ng-value="playsCtrl.questions[1].answers[0]">
+		<span ng-bind="playsCtrl.questions[1].answers[0].answer"></span>
+		<input type="radio" name="question1" ng-model="playsCtrl.question1"  ng-value="playsCtrl.questions[1].answers[1]">
+		<span ng-bind="playsCtrl.questions[1].answers[1].answer"></span>
+		<input type="radio" name="question1" ng-model="playsCtrl.question1"  ng-value="playsCtrl.questions[1].answers[2]">
+		<span ng-bind="playsCtrl.questions[1].answers[2].answer"></span>
+	</p>
+	<hr>	
+</div>
+<div>
+	<h4 ng-bind="playsCtrl.questions[2].question"></h4>
+	<p>
+		<input type="radio" name="question2" ng-model="playsCtrl.question2" ng-value="playsCtrl.questions[2].answers[0]">
+		<span ng-bind="playsCtrl.questions[2].answers[0].answer"></span>
+		<input type="radio" name="question2" ng-model="playsCtrl.question2"  ng-value="playsCtrl.questions[2].answers[1]">
+		<span ng-bind="playsCtrl.questions[2].answers[1].answer"></span>
+		<input type="radio" name="question2" ng-model="playsCtrl.question2"  ng-value="playsCtrl.questions[2].answers[2]">
+		<span ng-bind="playsCtrl.questions[2].answers[2].answer"></span>
+	</p>
+	<hr>	
+</div>
+
+<input type="submit" ng-click="playsCtrl.calculate(playsCtrl.question0, playsCtrl.question1, playsCtrl.question2)">
+
+
+
+<!-- <span ng-bind="playsCtrl.questions"></span> -->
